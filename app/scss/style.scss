@@ -1,4 +1,34 @@
 @forward 'reset';
-
-
 @forward 'global';
+
+.header{
+    padding: 40px 0;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+    }
+
+    &__list-item + .menu__list-item{
+        padding-left: 35px;
+    }
+
+    &__list-link{
+        transition: all .3s;
+        padding-bottom: 0px 2px 2px;
+
+        &:hover{
+            color: #fe3e57;
+            border-radius: 1px solid #fe3e57;
+            padding-bottom: 0px 2px 2px;
+        }
+    }
+}
+
